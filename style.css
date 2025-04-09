@@ -1,0 +1,700 @@
+:root {
+  --pink: #f14e95;
+  --pink-muda: #ffb6d7;
+  --ping-hover: #d84686;
+  --pink-light: #fcdbe9;
+  --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+  --very-light-grey: #eee;
+  --grey: #ccc;
+  --light-grey: #d4d4d4;
+  --dark-grey: #999;
+  --dark: #151515;
+  --pink-tua: #6e0030;
+}
+
+body {
+  font-size: 2.5rem;
+  font-family: "Work Sans", sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(gambar/lovehp.gif);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  min-height: 100vh;
+}
+
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+}
+
+.hero h1 {
+  font-family: "Love Light";
+  font-size: 9rem;
+  font-weight: lighter;
+}
+
+.hero h2, #home h2 {
+  font-family: "Love Light";
+  font-size: 6rem;
+  color: #919191;
+  margin: 0.05rem;
+}
+
+.hero h5 {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  padding-bottom: 1rem;
+}
+
+.hero h4 {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.hero h3 {
+  font-size: 1rem;
+  color:  white;
+}
+
+.hero a {
+  font-size: 1.5rem;
+  color: rgb(255, 0, 0);
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+  background-color: rgba(255, 0, 0, 0.5);
+  color: white;
+}
+
+
+#home {
+  text-shadow: var(--shadow);
+  background-image: url(gambar/sepatu.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+#home h1 {
+  font-family: "Carattere";
+  font-size: 5rem;
+  font-weight: lighter;
+  color: white;
+  margin: 1rem;
+}
+
+
+#home h4 {
+  font-size: 2.5rem;
+  font-family: "Work Sans", sans-serif;
+  color: white;
+  letter-spacing: 0.2rem;
+}
+
+#home h5 {
+  font-size: 2.2rem;
+  font-family: "Work Sans", sans-serif;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+
+
+.audio-icon-wrapper {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 2.5rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: muter 4s linear infinite;
+  line-height: 0;
+}
+
+@keyframes muter {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.text-pink, h2 {
+  color: white;
+  
+}
+
+.pembuka-section {
+  font-family: "Work Sans", sans-serif;
+  min-height: 100vh;
+  color: white;
+  text-shadow: var(--shadow);
+}
+
+.pembuka-section h2 {
+  font-size: 2.2rem;
+  font-family: 'Carattere';
+  letter-spacing: 0.2rem;
+  color: #ffb6d7;
+  text-shadow: var(--shadow);
+  font-weight: bold;
+}
+.pembuka-section h1 {
+  font-size: 3rem;
+  font-family: 'Carattere';
+  letter-spacing: 0.2rem;
+}
+
+.section-title {
+  text-align: center;
+  color: white;
+}
+
+.pembuka-section h3 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.pembuka-section p {
+  font-size: 1.4rem;
+  color: white;
+}
+
+.pembuka-section .couple {
+  width: 100%; height:auto;
+  color: white;
+  width: 45rem;
+}
+
+.section-bg {
+  background-image: url(gambar/aa.png);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.pembuka-section .card {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+
+.card-couple {
+  background-color: rgba(241, 78, 149, 0.467);
+  margin-bottom: 2rem;
+}
+
+
+.info {
+  background-image: url(gambar/b.jpeg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.info .card {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.svg-one {
+  background:url(gambar/b1.png);
+  background-size:cover;
+  width: 100%; height:auto;
+  display:block;
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.text-one {
+  font-size:2rem;
+  transition:font-size .4s ease-out;
+  font-weight:900;
+  font-family:arial;
+}
+
+.svg-one:hover text{
+  transition:font-size .4s ease-in;
+  font-size: 300px;
+  text-align: center;
+}
+
+.info p {
+  font-size: 1.5rem;
+}
+
+.info h1 {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+ }
+
+.info h2 {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+ }
+
+.info h3 {
+  color: #ffb6d7;
+  font-family: "Carattere";
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  text-shadow: var(--shadow);
+}
+
+.info .card-header {
+  background-color: var(--pink);
+  border-radius: 2rem;
+}
+
+.info span {
+  font-family: "Work Sans", sans-serif;
+  font-size: 2.5rem;
+  color: white;
+}
+
+hr.one, hr.three {
+  border-top: 2px solid var(--pink);
+  opacity: 45;
+  margin-bottom: 0.05rem;
+  margin-top: 4rem;
+}
+hr.two, hr.four {
+  border-top: 2px solid var(--pink);
+  opacity: 45;
+  margin-bottom: 0.05rem;
+}
+
+.info .alamat {
+  color: white;
+  font-size: 2rem;
+}
+
+.info .naraya {
+  width: 10rem;
+  border-radius: 3rem;
+}
+
+.info a {
+  font-size: 1.5rem;
+  color: var(--pink);
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+
+.info a:hover {
+  background-color: var(--pink);
+  color: white;
+}
+
+
+.info-two {
+  background-image: url(gambar/d.jpeg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.info-two .card {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.svg-two {
+  background:url(gambar/b2.png);
+  background-size:cover;
+  width: 100%; height:auto;
+  display:block;
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.text-two {
+  font-size:2rem;
+  transition:font-size .4s ease-out;
+  font-weight:900;
+  font-family:arial;
+}
+
+.svg-two:hover text{
+  transition:font-size .4s ease-in;
+  font-size: 300px;
+  text-align: center;
+}
+
+.info-two p {
+  font-size: 1.5rem;
+}
+
+.info-two h1 {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 4rem;
+ }
+
+.info-two h2 {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
+ }
+
+.info-two h3 {
+ color: #ffb6d7;
+  font-family: "Carattere";
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  text-shadow: var(--shadow);
+}
+
+.info-two .card-header {
+  background-color: var(--pink-tua);
+  border-radius: 2rem;
+}
+
+
+.info-two span {
+  font-family: "Work Sans", sans-serif;
+  font-size: 2.5rem;
+  color: white;
+
+}
+
+.info-two .alamat {
+  color: white;
+  font-size: 2rem;
+}
+
+.info-two .naraya {
+  width: 10rem;
+  border-radius: 3rem;
+  border-radius: 11rem;
+}
+
+.info-two a {
+  font-size: 1.5rem;
+  color: var(--pink-tua);
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+
+.info-two a:hover {
+  background-color: var(--pink-tua);
+  color: white;
+}
+
+.info-two hr.one, .info-two hr.three {
+  border-top: 2px solid var(--pink-tua);
+  opacity: 45;
+  margin-bottom: 0.05rem;
+  margin-top: 4rem;
+}
+.info-two hr.two, .info-two hr.four {
+  border-top: 2px solid var(--pink-tua);
+  opacity: 45;
+  margin-top: 0.05rem;
+}
+
+
+
+
+.gallery {
+  background-image: url(gambar/lovehp.gif);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.gallery h2 {
+  font-family: 'Carattere';
+  color: white;
+  font-size: 5rem;
+  margin-top: -3rem;
+  padding-top: 4rem;
+  letter-spacing: 0.2rem;
+  text-shadow: var(--shadow);
+
+}
+
+.gallery p {
+  font-size: 1.5rem;
+  color: white;
+}
+
+
+.gifts {
+  background-image: url(gambar/galery/3.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.gifts h2 {
+  font-family: 'Carattere';
+  color: var(--pink-muda);
+  font-size: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+.gifts p {
+  font-size: 2.5rem;
+  color: #151515;
+  font-weight: bold;
+}
+
+.gifts .card {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.gifts .card-header {
+  background-color: white;
+  background-size: cover;
+  position: relative;
+  border-radius: 15px;
+  width: 30rem;
+}
+
+.card-img-top {
+  width: 28rem;
+  margin-top: 2rem;
+}
+
+.gifts button {
+  font-size: 1.5rem;
+  color: var(--pink-tua);
+  background-color: var(--pink-muda);
+  box-shadow: var(--shadow);
+}
+
+.gifts button:hover {
+  background-color: var(--pink-tua);
+  color: white;
+}
+
+.gifts h3 {
+  font-size: 1.8rem;
+  margin: 1rem;
+}
+.gifts h4 {
+  font-size: 1.8rem;
+}
+
+
+
+.rsvp {
+  background-image: url(gambar/c.jpeg);
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.rsvp h2 {
+  font-family: 'Carattere';
+  color: var(--pink-muda);
+  font-size: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  text-shadow: var(--shadow);
+}
+
+.rsvp p {
+  font-size: 1.8;
+}
+
+.rsvp form label {
+  color: black;
+}
+
+.rsvp button {
+  font-size: 2rem;
+  color: var(--pink-tua);
+  background-color: var(--pink-muda);
+  box-shadow: var(--shadow);
+}
+
+.rsvp button:hover {
+  background-color: var(--pink-tua);
+  color: white;
+}
+
+.rsvp .card {
+  background-color: rgba(209, 208, 208, 0.6) !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+
+footer {
+  padding: 3rem;
+  background-color: var(--pink-muda);
+  color: white;
+}
+
+footer a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 0.5rem;
+}
+
+footer small br {
+  font-size: 20rem;
+}
+
+
+
+.penutup {
+  background-image: url(gambar/galery/5.png);
+  background-position: center;
+  background-size: cover;
+  min-height: 25vh;
+}
+
+.penutup h2 {
+  font-family: 'Carattere';
+  color: var(--pink-muda);
+  font-size: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-shadow: var(--shadow);
+}
+
+.penutup .card {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+  background-position: center;
+}
+
+.penutup p {
+  color: white;
+  font-size: 1.8;
+}
+
+
+
+/* Media Query */
+/* Extra Large */
+@media (max-width: 1200px) {
+  .home .hati {
+    transform: translateX(-50%) translateY(45px);
+  }
+  .sticky-top {
+    overflow: hidden;
+  }
+}
+
+
+/* leptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 80%;
+
+  }
+  .simply-countdown-dark > .simply-section {
+    padding: 40px;
+  }
+
+  .home .hati {
+    display: none;
+  }
+
+  .sticky-top {
+    overflow: hidden;
+  }
+}
+
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 75%
+  }
+  .simply-countdown-dark > .simply-section {
+    padding: 45px;
+    margin: 4px;
+  }
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .sticky-top {
+    overflow: hidden;
+  }
+
+}
+/* mobile phone */
+@media (max-width: 576px) {
+  html {
+    font-size: 45%;
+  }
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .sticky-top {
+    overflow: hidden;
+  }
+
+  .simply-countdown-dark > .simply-section {
+    padding: 35px;
+    margin: 2px;
+  }
+  .simply-countdown-dark > .simply-section .simply-amount {
+    font-size: 2rem;
+  }
+  .simply-countdown-dark > .simply-section .simply-word {
+    font-size: 1rem;
+  }
+}
+
+
