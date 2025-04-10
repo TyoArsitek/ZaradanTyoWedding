@@ -17,6 +17,7 @@ body {
   font-family: "Work Sans", sans-serif;
   min-height: 100vh;
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 .hero::before {
@@ -115,12 +116,12 @@ body {
 
 
 .audio-icon-wrapper {
-  width: 2.5rem;
-  height: 2.5rem;
-  font-size: 2.5rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 3rem;
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: 2.5rem;
+  right: 2.5rem;
   cursor: pointer;
   color: white;
   opacity: 0.5;
@@ -177,7 +178,7 @@ body {
 }
 
 .pembuka-section p {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: white;
 }
 
@@ -456,6 +457,7 @@ hr.two, hr.four {
 }
 
 
+
 .gifts {
   background-image: url(gambar/galery/3.png);
   background-size: cover;
@@ -686,7 +688,7 @@ footer small br {
   }
 
   .simply-countdown-dark > .simply-section {
-    padding: 35px;
+    padding: 25px;
     margin: 2px;
   }
   .simply-countdown-dark > .simply-section .simply-amount {
