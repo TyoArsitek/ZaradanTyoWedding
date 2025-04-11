@@ -57,7 +57,8 @@
       <h1>Tyo</h3>
     </div>
     <div data-aos="fade-up" data-aos-duration="1000">
-      <h4>Kepada Yth.<br><span>Bapak/Ibu/Saudara/i,</span></h4>
+      <h4>Yth. Bapak/Ibu/Sdr/i,</h4>
+      <span id="nama-tamu"></span>
       <h3>Maaf apabila ada kesalahan pada penulisan nama/gelar</h3>
       <a href="#home" class="rounded-pill btn btn-get-started" onClick="enableScroll()"><i
         class="bi bi-envelope-open"></i> Buka Undangan </a>
@@ -581,10 +582,10 @@
 <script>
   const urlParams = new URLSearchParams(window.location.search);
   const nama = urlParams.get('n') || '';
-  const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
+  const pronoun = urlParams.get('p') || '';
 
-  const namaContainer = document.querySelector('.hero h4 span');
-  namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ',');
+  const namaTamu = document.querySelector('#nama-tamu');
+  namaTamu.innerText = `${pronoun} ${nama},`.replace(/ ,$/, '');
 
   document.querySelector('#nama').value = nama;
 </script>
