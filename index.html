@@ -400,7 +400,9 @@
           Kehadiran Bapak/Ibu/Saudara/i akan menjadi kehormatan besar bagi kami dan keluarga. Mohon konfirmasi kehadiran Anda melalui formulir reservasi di bawah ini:</p>
 
         <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" 
-          id="FORM_ID" method="POST" action="https://script.google.com/macros/s/AKfycbzYY-E-RiRDBqMyzvjs5UKtqH-bH-6Ue1I4Gy-6DTeI55v3pMTf3trNp_1rx8cyMZRjbQ/exec">
+        method="POST" 
+        action="https://script.google.com/macros/s/AKfycbxWaYtwfOKRqLZ0CxBXEMoizC2upvvImBUDhFay_1-IKfl22X5p0Qpgxo8z9xopdytDkQ/exec" 
+        id="my-form">
           <div class="card" style="width: 35rem;" data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="3000" data-aos-delay="400">
@@ -430,7 +432,7 @@
                 </label>
               </div>
           </div>
-              <button type="submit" class="bi bi-send rounded btn btn-light btn-ms my-4"> Kirim</button>
+              <button type="submit" value="Submit" class="bi bi-send rounded btn btn-light btn-ms my-4"> Kirim</button>
         </form>
 </section>
 
@@ -585,7 +587,7 @@
   const pronoun = urlParams.get('p') || '';
 
   const namaTamu = document.querySelector('#nama-tamu');
-  namaTamu.innerText = `${pronoun} ${nama},`.replace(/ ,$/, '');
+  namaTamu.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ',');
 
   document.querySelector('#nama').value = nama;
 </script>
@@ -638,7 +640,21 @@
 
 
 <script>
- 
+ window.addEventListener("load", function() {
+  const form = document.getElementById('my-form');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Konfirmasi kehadiran berhasil terkirim!");
+    })
+  });
+});
 </script>
 
 
